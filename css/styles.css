@@ -1,0 +1,485 @@
+/***********************LES COULEURS******************/
+
+/*H3*/
+.couleur-rose{
+    font-weight: bold ;
+    color: #df6951;
+    font-family: "poppins-regular";
+}
+/*H1*/
+.couleur-blanc{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "poppins-regular";
+    margin: 20px 0 20px 0;
+}
+/*H5*/
+.couleur-gris{
+    color: #bfc0cd;
+    font-size: 18px;
+    font-family: "poppins-regular";
+}
+
+.couleur-grisbis{
+    color: #523450;
+    font-size: 18px;
+    font-family: "poppins-regular";
+}
+
+#section {
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    padding: 100px 8% 100px 8%;
+    overflow: hidden;
+}
+
+/*ELEMENT GLOBAUX HTML*/
+html, body{
+    font-family: "TwinkleStar-Regular, sans-serif";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    font-family:"poppins-regular";
+}
+
+a:hover{
+    color:orange;
+    background-color: white;
+}
+
+h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #5e6282;
+    margin-bottom: 10px;
+    font: 18px "poppins-regular";
+    
+    }
+
+h2 {
+    font: 50px "volkhov-bold";
+    color: #14183e;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+figure{
+    width: 320px;
+}
+
+figure img{
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+figcaption{
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #666666;
+}
+.conteneur-titres{
+    margin-top: 4%;
+}
+
+
+/***********************LES COULEURS******************/
+
+/*H3*/
+.couleur-rose{
+    color: #df6951;
+}
+/*H1*/
+.couleur-blanc{
+    color: white;
+    font-size: 86px;
+    font-weight: bold;
+}
+/*H5*/
+.couleur-gris{
+    color: #bfc0cd;
+    font-size: 25px;
+    font-family: "poppins-regular";
+}
+
+/*NAVBAR = MENU HORIZONTALE*/
+
+#menu{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+    top: 0;
+    padding: 20px 0;
+    transition: all 0.2s ease-in-out;
+
+}
+
+/*Les logos*/
+.logos{
+    /*background-color: orange;*/
+    margin-left: 10%;
+}
+
+#logo-sushi{
+    width: 30px;
+}
+
+#menu-navigation{
+    /*background-color: palevioletred;*/
+    display: flex;
+    margin-right: 10%;
+}
+
+
+ul li{
+    list-style-type:none;
+}
+
+
+/*BLOCK 1*/
+#block1{
+    background-image: url("../img/illustration_principale.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 120px;
+}
+
+article{
+    /*background-color: red;*/
+    width: 565px;
+    height: 700px;
+    margin-left: 10%;
+    padding-top: 40px;
+}
+
+.btn-block{
+    border: none;
+    border-radius: 40px;
+    padding: 20px;
+    color: white;
+    background-color: orange;
+}
+
+.btn-block:hover{
+    cursor: pointer;
+    background-color: orangered;
+    
+}
+
+/****************************BLOCK 2****************/
+/*LES TITRES CENTRER*/
+
+#block2{
+    text-align: center;
+    min-height: 100%;
+}
+
+.conteneur-titres{
+    text-align: center;
+}
+
+.carte-parente{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.carte-enfant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.plat{
+    border-radius: 95px;
+     /* offset-x | offset-y | blur-radius | spread-radius | color */
+     box-shadow: 2px 2px 10px 10px rgba(224, 148, 85, 0.979);
+}
+
+/*****MAKIS*****/
+
+.carte-sous-enfant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+.carte-maki{
+    width: 320px;
+    border-radius: 35px;
+    transition: 0.2s;
+}
+
+.carte-maki:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 2px 2px 10px 1px rgba(88, 96, 206, 0.2);
+}
+
+
+.centrer-maki{
+    text-align: center;
+}
+
+.bouton{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+
+/**********************BLOCK3*************************/
+#block3{
+    background-image: url("../img/illustration_chef.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1200px;
+}
+
+.conteneur-video img{
+    border-radius: 15px;
+    width: 300px;
+    height: 170px;
+}
+
+/*BTN PLAY**/
+#btn-play{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: -200px;
+    margin-bottom: 50px;
+    background-color: white;
+    border: solid 5px white;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+#btn-play:hover{
+    border:solid 5px rgb(161, 148, 72);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.photo-hors-champs{
+    /* background-color: #df6951; */
+    position: absolute;
+    margin-top: 145px;
+    left: 0;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.photo-hors-champs img{ 
+    width: 500px;
+}
+
+/**********************BLOCK4*************************/
+#block4{
+    background-image: url("../img/illustration_commander.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.commander{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.commander img{
+    width: 70px;
+}
+
+#article-block4{
+    padding-top: 325px;
+    margin-left: 10%;
+}
+
+.commander-logo-text{
+    margin-left: 20px;
+}
+
+.block4-titre{
+    font-family:"poppins-regular";
+    color: #000000;
+    font-weight: bold;
+}
+
+.block4-para{
+    font-family:"poppins-regular";
+    color: #464141;
+    font-weight: bold;
+}
+
+.soulignage{
+    margin-top:0;
+    margin: bottom 5px;;
+}
+
+/**************block5*********/
+#block5{
+    width: 100%;
+}
+
+.form-conteneur{
+    height: 700px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 35px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+     box-shadow: 2px 2px 10px 10px rgba(224, 148, 85, 0.979);
+    width: 1020px;
+    height: 500px;
+}
+
+.form-gauche{
+    width: 50%;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    padding: 20px;
+    background-color: rgba(253, 104, 4, 0.822);
+
+}
+
+.form-droite{
+    width: 50%;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background-image: url("../img/illustration_formulaire.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.form-droite img{
+    width: 100%;
+    
+}
+
+.nom-prenom-conteneur{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+    }
+
+.email{
+    padding-top: 20px;
+}    
+.message{
+    padding-top: 20px;
+}
+
+input{
+    border: none;
+   background-color: rgba(235, 214, 214, 0.904);
+    width: 96%;
+    margin-top: 30px;
+    outline: none;
+}
+
+input:focus{
+    border: none;
+    border-bottom: 1px solid #010200;
+    outline: none;
+
+}
+
+.prenom input{
+    width: 90%;
+}
+
+.nom input{
+    width: 90%;
+}
+.btn-envoyer{
+    background-color: #523450;
+    box-shadow: 0px 20px 35px 5px rgb(11 54 59 / 15%);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: "poppins-regular";
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+.btn-envoyer:hover{
+    background-color: #14183e;
+    color: tomato;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.btn-center-form{
+    text-align: center;
+}
+
+/*fooooter**********************************/
+
+footer{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-centre{
+    display: flex;
+    justify-content: center;
+}
+.centre-droite{
+    margin-left: 20px;
+}
+.centre-gauche a{
+    padding: 0;
+}
+
+.btn-google-apple{
+    padding: 10px;
+    background-color: black;
+    border-radius: 35px;
+    color: white;
+    border: none;
+    transition: 0.2s;
+    margin: 0 5px 0 5px;
+    font-size: 20px;
+}
+
+.btn-google-apple:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.copright-footer{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+    
