@@ -1,0 +1,284 @@
+/*Ecran large 1200px*/
+
+@media(max-width:1500px) {
+    /*Block 5*/
+    /*On centre le bloc de titre*/
+    .titre-form{
+        text-align: center;
+    }
+
+    /*L'image de droite est cachée*/
+    .from-right{
+        display: none;
+    }
+    /*le formulaire prend 100% du bloc parent*/
+    .form-left{
+        width: 100%;
+    }
+    /*nom + prenom sont l'un en dessous l'autre et non aligné*/
+    .nom-prenom{
+        display: block;
+    }
+    /*Chaque input prend 100% de la largeur*/
+    #nom{
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    #prenom{
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    #email{
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    #message{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    /*On espace chaque element*/
+    .nom-parent{
+        margin-top: 20px;
+    }
+    .prenom-parent{
+        margin-top: 20px;
+    }
+    .email-parent{
+        margin-top: 20px;
+    }
+    .message-parent{
+        margin-top: 20px;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+        
+        /*On cache tous les liens de la navbar*/
+    .menu-button{
+        display: none;
+    }
+    /*Menu horizontale + le bouton burger devient apparant*/
+    #burger{
+        display: block;
+    }
+
+    /****BLOCK 3*/
+    /*Les photos wrapper passe de absolute a static sont centrée et prennent 100% de la largeur*/
+    .photo-abs-left{
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+    /*BLOC 4*/
+    
+    .list-commande{
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 990px) {
+        /*BLOCK 1*/
+    /*Quand ecran < 990px article prend 100% + pas de marge et le texte centrer*/
+    /*Il prend une position relative et aligne le texte*/
+    article{
+        text-align: center;
+    }
+    /*Le parent de la photo devient un block (les 2 photos passe l'une sous l'autre)*/
+   
+    
+    /*BLOC 3*/
+    /*La hauteur est auto + pas de marge interne*/
+    .article-block3{
+        height: auto;
+        padding: 0;
+    }
+    #h1-bloc3{
+        color: #333333;
+    }
+    /*On applique une hauteur abitraire a la photo*/
+    .image-video{
+        height: 350px;
+    }
+   
+
+    /*la ôsition passe de absolute a relative et on supprime les marge interne et externe*/
+    .photo-abs-left{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: block;
+        z-index: 0;
+    }
+
+    /*Les photos prennent une largeur de tous l'ecran*/
+    .photo-abs-left img{
+        min-width: 100%!important;
+        min-height: 100%!important;
+    }
+    /*Sa largeur devient 100% + pas de border radius*/
+    .img-video{
+        min-width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    /*On deplace le bouton PLAY du bas vers le haut*/
+    #btn-play {
+        bottom: 200px;
+        left: 0;
+    }
+    /*On cache le fond d'ecran*/
+    #section-3{
+        background: none;
+    }
+  
+    /*L'image apparait et sa largeur est 100% pas de marge hauteur autotmatique*/
+    #petit-chef img{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    /*Le block de texte disparait*/
+    .bloc3-text{
+        display: none;
+    }
+
+    .article-block3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #commander-conteneur{
+        margin: 0;
+        text-align: center;
+        padding: 1px;
+    }
+    .list-commande{
+        margin: 0;
+    }
+  
+}
+
+@media (max-width: 768px) {
+        /*BLOC5*/
+    .form-container{
+        width: 90%;
+    }
+  
+}
+
+@media(max-width: 576px) {
+    
+    /*BLOCK 1*/
+    .article-bloc1{
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+
+    /*Quand ecran < 576px on change la taille des titres*/
+    .titre-h1{
+        font-size: 50px;
+    }
+    .titre-h3{
+        font-size: 18px;
+    }
+    .titre-h5{
+        font-size: 14px;
+    }
+
+    /*BLOC 2*/
+    /*Quand ecran < 576px le parent des makis devient un block verticale*/
+    .item-conteneur-maki{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    /*Et le conteneur de chaque maki devient flexible donc s'aligne (image + texte)*/
+    .carte-maki{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /*Pas besoin d'effet de survol sur mobile et tablette*/
+    .carte-maki:hover{
+        background: none;
+        cursor: auto;
+        border: none;
+        box-shadow: none;
+    }
+    /*Bloc 3 */
+    /*Les 2 photos wrapper prennent 100% de large*/
+    .photo-abs-left{
+        width: 100%;
+    }
+   
+ 
+    /*Le block article prend 100% de large pas de marge interne et externe*/
+    .article-block3 {
+        height: auto;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+      /*On applique une hauteur abitraire a la photo*/
+       /*La photo de la video prend 100% de large*/
+      .image-video{
+        height: 250px;
+        width: 100%;
+    }
+
+    /*BLOC 4*/
+    .list-container span a{
+        margin-left: 20px;
+    }
+
+    /*Footer*/
+    /*On passe de display flex a block*/
+    footer{
+        display: block;
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+    }
+    /*Idem pour le block au centre*/
+    .footer-center{
+        display: block;
+        margin-top: 20px;
+    }
+    /*On supprime les marges et on ajoute du padding*/
+    .footer-center-right{
+        margin: 0; 
+        padding: 20px;
+    }
+    .footer-center-left{
+        margin: 0; 
+        padding: 20px;
+    }
+    /*On eneleve les marges sur les boutons*/
+    .btn-google{
+        margin: 20px 0 20px 0 ;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+       /*BLOC 3*/
+    #btn-play{
+        bottom: 120px;
+    }
+    .image-video{
+        height: 160px;
+    }
+}
